@@ -1,7 +1,7 @@
 {
-	"name": "Scramjet Demo",
-	"description": "Scramjet Demo App",
-	"repository": "https://github.com/.../Scramjet-Demo",
-	"logo": "https://raw.githubusercontent.com/MercuryWorkshop/scramjet/main/assets/scramjet.png",
+	"name": "Str1k3r Central (Scramjet-App)",
+	"description": "Str1k3r Central, Self Deployable Application",
+	"repository": "https://github.com/S1l3ntStr1ke87/str1k3r-central/",
+	"logo": "https://raw.githubusercontent.com/S1l3ntStr1ke87/str1k3r-central/refs/heads/main/public/assets/logo.webp",
 	"keywords": ["scramjet"]
 }
