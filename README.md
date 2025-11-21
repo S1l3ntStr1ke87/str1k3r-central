@@ -1,6 +1,6 @@
 <p align="center"><img src="https://raw.githubusercontent.com/MercuryWorkshop/scramjet/main/assets/scramjet.png" height="200"></p>
 
-<h1 align="center">Scramjet Demo</h1>
+<h1 align="center">Str1k3r Central (Scramjet-App)</h1>
 
 The demo implementation of <a href="https://github.com/MercuryWorkshop/scramjet">Scramjet</a>, the most advanced web proxy.
 
