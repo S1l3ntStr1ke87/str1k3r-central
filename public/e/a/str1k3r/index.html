@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>j!</title>
+  <link rel="icon" type="image/x-icon" href="googlefavicon.ico">
+  <link rel="stylesheet" href="h.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- mexi, the code below is for particles.js -->
+  <script src="/particles.js"></script>
+  <script src="/app.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    #enter-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      z-index: 9999;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Overlay to click to enter -->
+  <div id="enter-overlay">
+    <span>Click to Enter</span>
+  </div>
+
+  <audio id="enter-sound" autoplay loop preload="auto">
+    <source src="media/music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <div id="particles-js"></div>
+  <div id="roddy">
+    <div class="minecraft-select">
+      <div id="pfp">
+        <img src="jockey.jpg" alt="pfp" width="170px" height="170px">
+      </div>
+      <h1>Welcome, j!</h1>
+      <h4>14 year old developer, minecraft server owner, and console modding enthusiast :D</h4>
+      <h5>my projects</h5>
+      <a href="https://mexi.rest">
+        <img src="mexi.png" width="40" height="40" alt="Discord">
+      </a>
+      <a href="/12wasm/index.html">
+          <img src="minecraft.png" width="40" height="40" alt="Discord">
+      </a>
+      <h5>socials</h5>
+      <a href="https://discord.com/users/1284743247620472866">
+        <img src="discord.png" width="40" height="40" alt="Discord">
+      </a>
+      <a href="https://github.com/jvishere">
+        <img src="github.png" width="40" height="40" alt="Discord">
+      </a>
+      <a href="https://www.tiktok.com/@mexi.rest">
+        <img src="tiktok.png" width="40" height="40" alt="Discord">
+      </a>
+      <a href="https://www.youtube.com/@j9k2">
+        <img src="youtube.png" width="40" height="40" alt="Discord">
+      </a>
+      <a href="https://open.spotify.com/user/31ar6uhkjpcv4exo3aog3k2yeekm">
+        <img src="spotify.png" width="40" height="40" alt="Discord">
+      </a>
+      <div class="volume-slider">
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get the audio element, the volume slider, and the enter overlay
+    const audio = document.getElementById('enter-sound');
+    const volumeSlider = document.getElementById('volume');
+    const enterOverlay = document.getElementById('enter-overlay');
+
+    // Event listener to change the audio volume
+    volumeSlider.addEventListener('input', function() {
+      audio.volume = volumeSlider.value;
+    });
+
+    // Event listener to remove the overlay on click
+    enterOverlay.addEventListener('click', function() {
+      enterOverlay.style.display = 'none';
+      audio.play();
+    });
+  </script>
+</body>
+</html>

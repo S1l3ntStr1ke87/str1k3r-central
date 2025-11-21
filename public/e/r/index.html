@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/e/r/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar-container" id="navbar">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img class="logo-icon" src="/assets/logo.webp" alt="Str1k3r Central">
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link" title="Home">
+                    <img class="nav-logo" src="" alt="">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="/g" class="nav-link" title="Apps">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="link-text">Games</span>
+                </a>
+                <a href="/s" class="nav-link" title="Settings">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">Settings</span>
+                </a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" title="More">
+                        <span class="link-text">More</span>
+                        <i class="dropdown-arrow fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="https://discord.gg/cqAHth5ezp" class="dropdown-item" title="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="/e/r/" class="dropdown-item" title="Requests">
+                            <i class="fa-solid fa-message"></i>
+                            Requests
+                        </a>
+                        <a href="/e/c/" class="dropdown-item" title="Credits">
+                            <i class="fas fa-user"></i>
+                            Credits
+                        </a>
+                        <a href="/e/p/" class="dropdown-item" title="Suggestions">
+                            <i class="fa-solid fa-handshake"></i>
+                            Partners
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="page-content">
+    <div class="message-box" id="messageBox"></div>
+
+    <!-- ==== REQUESTS ==== -->
+    <div id="requests">
+
+        <!-- 2. General Request -->
+    <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+        <h2>General Request</h2>
+        <p style="margin-bottom:12px; font-size:0.9em; color:#802eaf;">Suggest features or ideas</p>
+        <form class="request-form" data-type="request" style="display:flex; flex-direction:column; gap:12px;">
+            <input type="text" class="input" placeholder="Your Name (optional)" maxlength="50"
+                   style="width:100%; max-width:none; background:#080808; color:#fff;">
+            <input type="text" class="input" placeholder="Request Title" required
+                   style="width:100%; max-width:none; background:#080808; color:#fff;">
+            <textarea class="input" placeholder="Describe your idea..." required
+                      style="width:100%; max-width:none; height:90px; resize:vertical; background:#080808; color:#fff; padding:12px; border:3px solid #141414; border-radius:30px;"></textarea>
+            <button type="submit" class="button button2"
+                    style="align-self:center; width:160px;">Send Request</button>
+        </form>
+        <p class="form-status" style="margin-top:8px; font-size:0.9em; color:#6a03a7;"></p>
+    </div>
+
+    <!-- 3. Report a Bug -->
+    <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+        <h2>Report a Bug</h2>
+        <p style="margin-bottom:12px; font-size:0.9em; color:#802eaf;">Help us fix issues</p>
+        <form class="request-form" data-type="bug" style="display:flex; flex-direction:column; gap:12px;">
+            <input type="text" class="input" placeholder="Your Name (optional)" maxlength="50"
+                   style="width:100%; max-width:none; background:#080808; color:#fff;">
+            <input type="text" class="input" placeholder="Bug Title" required
+                   style="width:100%; max-width:none; background:#080808; color:#fff;">
+            <textarea class="input" placeholder="Steps to reproduce + expected behavior..." required
+                      style="width:100%; max-width:none; height:90px; resize:vertical; background:#080808; color:#fff; padding:12px; border:3px solid #141414; border-radius:30px;"></textarea>
+            <button type="submit" class="button button2"
+                    style="align-self:center; width:160px;">Report Bug</button>
+        </form>
+        <p class="form-status" style="margin-top:8px; font-size:0.9em; color:#6a03a7;"></p>
+    </div>
+
+<!-- 4. Request a Game -->
+<div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+    <h2>Request a Game</h2>
+    <p style="margin-bottom:12px; font-size:0.9em; color:#802eaf;">Want a new game added?</p>
+    <form class="request-form" data-type="game" style="display:flex; flex-direction:column; gap:12px;">
+        <input type="text" class="input" placeholder="Your Name (optional)" maxlength="50"
+               style="width:100%; max-width:none; background:#080808; color:#fff;">
+
+        <input type="text" class="input" placeholder="Game Name" required
+               style="width:100%; max-width:none; background:#080808; color:#fff;">
+
+        <input type="url" class="input" placeholder="Game URL (optional)"
+               style="width:100%; max-width:none; background:#080808; color:#fff;">
+
+        <button type="submit" class="button button2"
+                style="align-self:center; width:160px;">Request Game</button>
+    </form>
+    <p class="form-status" style="margin-top:8px; font-size:0.9em; color:#6a03a7;"></p>
+</div>
+
+<div id="notifs" style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column-reverse; gap: 10px; z-index: 9999;"></div>
+<div id="particles-js"></div>
+
+<script src="/assets/particles.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/main.js"></script>
+</body>
+</html>

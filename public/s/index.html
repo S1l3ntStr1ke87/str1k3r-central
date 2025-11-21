@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/s/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar-container" id="navbar">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img class="logo-icon" src="/assets/logo.webp" alt="Str1k3r Central">
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link" title="Home">
+                    <img class="nav-logo" src="" alt="">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="/g" class="nav-link" title="Apps">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="link-text">Games</span>
+                </a>
+                <a href="/s" class="nav-link" title="Settings">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">Settings</span>
+                </a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" title="More">
+                        <span class="link-text">More</span>
+                        <i class="dropdown-arrow fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="https://discord.gg/cqAHth5ezp" class="dropdown-item" title="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="/e/r/" class="dropdown-item" title="Requests">
+                            <i class="fa-solid fa-message"></i>
+                            Requests
+                        </a>
+                        <a href="/e/c/" class="dropdown-item" title="Credits">
+                            <i class="fas fa-user"></i>
+                            Credits
+                        </a>
+                        <a href="/e/p/" class="dropdown-item" title="Suggestions">
+                            <i class="fa-solid fa-handshake"></i>
+                            Partners
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+<div class="page-content">
+    <div class="message-box" id="messageBox"></div>
+
+    <!-- ==== SETTINGS (all blocks inside your #settings flex container) ==== -->
+    <div id="settings">
+
+        <!-- 1. Tab Cloak -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>Tab Cloak</h2>
+            <select id="premadecloaks" title="pre made cloaks">
+                <option value="classroom">Classroom (Default)</option>
+                <option value="search">Google</option>
+                <option value="drive">Google Drive</option>
+                <option value="search">Google Search</option>
+                <option value="gmail">Gmail</option>
+                <option value="youtube">YouTube</option>
+                <option value="calendar">Google Calendar</option>
+                <option value="meets">Google Meet</option>
+                <option value="canvas">Canvas</option>
+                <option value="zoom">Zoom</option>
+                <option value="khan">Khan Academy</option>
+                <option value="ixl">IXL</option>
+                <option value="blooket">Blooket</option>
+                <option value="gimkit">Gimkit</option>
+                <option value="harmony">Harmony</option>
+                <option value="desmos">Desmos</option>
+                <option value="canva">Canva</option>
+            </select>
+            <button class="button button2" onclick="setCloak()">Set Cloak</button>
+            <button class="button button2" onclick="resetTab()">Reset Cloak</button>
+        </div>
+
+        <!-- 2. Custom Cloak -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>Custom Cloak</h2>
+            <input id="title" class="input" placeholder="title" onkeyup="setTitle(this.value)">
+            <input id="icon" class="input" placeholder="favicon URL" onkeyup="setFavicon(this.value.trim())">
+        </div>
+
+        <!-- 3. Particles -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>Particles</h2>
+            <div class="buttons">
+                <button id="linkmaker" onclick="EnableParticles()">Enable</button>
+                <button id="linkmaker" onclick="DisableParticles()">Disable</button>
+            </div>
+        </div>
+
+        <!-- 4. About:Blank Cloaker -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>About:Blank Cloaker</h2>
+            <p>Double click the button to cloak</p>
+            <p>ONLY WORKS WITH GOOGLE & BRAVE</p>
+            <button onclick="openGame()" id="cloaker">Cloak</button>
+        </div>
+
+        <!-- 5. Search Engine -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>Search Engine</h2>
+            <p>Choose your preferred search engine</p>
+            <select id="engine-selector" title="search engine">
+                <option value="https://duckduckgo.com/search?q=%s">DuckDuckGo (Default)</option>
+                <option value="https://www.google.com/search?q=%s">Google</option>
+                <option value="https://www.bing.com/search?q=%s">Bing</option>
+                <option value="https://search.brave.com/search?q=%s">Brave</option>
+                <option value="https://www.startpage.com/sp/search?q=%s">Startpage</option>
+            </select>
+            <div class="engine-buttons" style="margin-top:10px;">
+                <button id="set-engine">Set Engine</button>
+                <button id="reset-engine" style="margin-left:8px;">Reset</button>
+            </div>
+            <p style="color:white;font-size:0.9em;opacity:0.7;">Used to search shit.</p>
+        </div>
+
+        <!-- 6. Panic Key -->
+        <div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+            <h2>Panic Key</h2>
+            <p>Key to switch sites for when teach pulls up on the block.</p>
+            <input id="panic-key" class="input" placeholder="Escape">
+            <input id="panic-url" class="input" placeholder="https://www.google.com">
+            <button id="save-panic-key" class="button button2">Save Panic Key</button>
+            <button id="reset-panic-key" class="button button2">Reset</button>
+        </div>
+
+        <!-- 7. Proxy Switcher UV/SJ -->
+<div class="roddrickiliousnotfinanciallystablemathmaticallyacurateretangularprism">
+    <h2>Proxy Switcher</h2>
+    <p>Choose which proxy to use for searches</p>
+    <select id="proxy-selector" title="Choose proxy">
+        <option value="sj">Scramjet (Default)</option>
+        <option value="uv">Ultraviolet (Deprecated)</option>
+    </select>
+    <div class="engine-buttons" style="margin-top:10px;">
+        <button id="save-proxy" class="button button2">Save Proxy</button>
+        <button id="reset-proxy" class="button button2" style="margin-left:8px;">Reset Proxy</button>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<div id="notifs" style="position: fixed; bottom: 20px; right: 20px; display: flex; flex-direction: column-reverse; gap: 10px; z-index: 9999;"></div>
+<div id="particles-js"></div>
+
+<script src="/assets/particles.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/main.js"></script>
+
+<!-- your openGame() script (unchanged; note: your <p> says "double click" but script sets single onclick—consider changing to ondblclick if needed) -->
+<script>
+function openGame(){
+    var urlObj = new window.URL(window.location.href);
+    var url = window.location;
+    if (url) {
+        var win;
+        document.querySelector('#cloaker').onclick = function() {
+            if (win) {
+                win.focus();
+            } else {
+                win = window.open();
+                win.document.body.style.margin = '0';
+                var originalTitle = document.title;
+                var faviconElement = document.querySelector('link[rel="icon"]');
+                var faviconURL = faviconElement ? faviconElement.href : '';
+                win.document.title = originalTitle;
+                if (faviconURL) {
+                    var favicon = win.document.createElement('link');
+                    favicon.rel = 'icon';
+                    favicon.href = faviconURL;
+                    win.document.head.appendChild(favicon);
+                }
+                var iframe = win.document.createElement('iframe');
+                iframe.style.border = 'none';
+                iframe.style.width = '100%';
+                iframe.style.height = '100%';
+                iframe.style.margin = '0';
+                iframe.style.overflow = 'hidden';
+                iframe.src = url;
+                win.document.body.appendChild(iframe);
+                redirectToDecoyFromCloak();
+                var interval = setInterval(function() {
+                    if (win.closed) {
+                        clearInterval(interval);
+                        win = undefined;
+                    }
+                }, 500);
+            }
+        };
+    }
+}
+</script>
+
+</body>
+</html>
