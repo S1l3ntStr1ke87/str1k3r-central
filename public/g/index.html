@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/g/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar-container" id="navbar">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img class="logo-icon" src="/assets/logo.webp" alt="Str1k3r Central">
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link" title="Home">
+                    <img class="nav-logo" src="" alt="">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="/g" class="nav-link" title="Apps">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="link-text">Games</span>
+                </a>
+                <a href="/s" class="nav-link" title="Settings">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">Settings</span>
+                </a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" title="More">
+                        <span class="link-text">More</span>
+                        <i class="dropdown-arrow fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="https://discord.gg/cqAHth5ezp" class="dropdown-item" title="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="/e/r/" class="dropdown-item" title="Requests">
+                            <i class="fa-solid fa-message"></i>
+                            Requests
+                        </a>
+                        <a href="/e/c/" class="dropdown-item" title="Credits">
+                            <i class="fas fa-user"></i>
+                            Credits
+                        </a>
+                        <a href="/e/p/" class="dropdown-item" title="Suggestions">
+                            <i class="fa-solid fa-handshake"></i>
+                            Partners
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+  
+  <!-- particles.js container -->
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+    <div id="particles-js"></div>
+
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search games...">
+    </div>
+
+    <div class="games-scroll-container">
+    </div>
+  </main>
+  <!-- scripts -->
+  <script src="/assets/main.js"></script>
+  <script src="/assets/particles.js"></script>
+  <script src="/assets/js/app.js"></script>
+  <script src="/g/main.js"></script>
+</body>
+</html>
