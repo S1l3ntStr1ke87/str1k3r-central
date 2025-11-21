@@ -5,8 +5,8 @@ ARG NPM_BUILD="npm install --omit=dev"
 EXPOSE 8080/tcp
 
 LABEL maintainer="Str1k3r"
-LABEL summary="Scramjet Demo Image"
-LABEL description="Example application of Scramjet"
+LABEL summary="Str1k3r Central, Self Deployable Application"
+LABEL description="Scramjet-App using str1k3r central modifications"
 
 WORKDIR /app
 
