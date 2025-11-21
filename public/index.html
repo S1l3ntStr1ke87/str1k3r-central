@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes" />
+    <meta name="title" content="str1k3r central" />
+    <meta name="theme-color" content="#6519A8" />
+    <meta name="description" content="A Lightweight proxy with games & more :3" />
+    <meta property="og:image" content="/assets/logo.webp">
+    <meta name="google-adsense-account" content="ca-pub-8669442861130809">
+    <title>Home</title>
+
+    <link rel="shortcut icon" content="favicon.ico" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- SC JS -->
+    <script src="/scram/scramjet.all.js"></script>
+    
+    <!-- BOTH JS -->
+    <script src="baremux/index.js" defer></script>
+    <script src="epoxy/index.js" defer></script>
+    <script src="index.js" defer></script>
+
+    <!-- UV JS -->
+    <script src="/uv/uv.bundle.js" defer></script>
+    <script src="/uv/uv.config.js" defer></script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8669442861130809" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- particles.js container -->
+    <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+
+    <!-- scripts -->
+    <script src="/assets/particles.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+    <!-- Navbar -->
+    <div class="navbar-container" id="navbar">
+        <nav class="navbar">
+            <div class="nav-logo">
+                <img class="logo-icon" src="/assets/logo.webp" alt="Str1k3r Central">
+            </div>
+            <div class="nav-links">
+                <a href="/" class="nav-link" title="Home">
+                    <img class="nav-logo" src="" alt="">
+                    <i class="fa-solid fa-house"></i>
+                    <span class="link-text">Home</span>
+                </a>
+                <a href="/g" class="nav-link" title="Apps">
+                    <i class="fas fa-gamepad"></i>
+                    <span class="link-text">Games</span>
+                </a>
+                <a href="/s" class="nav-link" title="Settings">
+                    <i class="fas fa-user"></i>
+                    <span class="link-text">Settings</span>
+                </a>
+                <div class="nav-dropdown">
+                    <button class="nav-link dropdown-toggle" title="More">
+                        <span class="link-text">More</span>
+                        <i class="dropdown-arrow fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="https://discord.gg/cqAHth5ezp" class="dropdown-item" title="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                            Discord
+                        </a>
+                        <a href="/e/r/" class="dropdown-item" title="Requests">
+                            <i class="fa-solid fa-message"></i>
+                            Requests
+                        </a>
+                        <a href="/e/c/" class="dropdown-item" title="Credits">
+                            <i class="fas fa-user"></i>
+                            Credits
+                        </a>
+                        <a href="/e/p/" class="dropdown-item" title="Suggestions">
+                            <i class="fa-solid fa-handshake"></i>
+                            Partners
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Logo and header -->
+    <div title="Str1k3r's Centeral Logo" class="flex-center logo-wrapper header-center">
+        <a href="/e/a/">
+            <img class="logo" src="sc.png" alt="Str1k3r Central"/>
+        </a>
+        <h1>Str1k3r Central&trade;</h1>
+    </div>
+    <span id="subtitle" style="font-size: 1.75em; text-align: center; color: rgba(255, 255, 255, 0.774);">
+        Chicken Butt
+    </span>
+    <div class="flex-center desc left-margin">
+        <p>Str1k3r Central, a Lightweight proxy using scramjet.</p>
+    </div>
+
+    <!-- Form -->
+    <div id="proxy-container" class="flex-center" onsubmit="hideNavbar();">
+  <form id="sj-form">
+    <input id="sj-search-engine" type="hidden" />
+    <input id="sj-address" type="text" placeholder="Search the web freely" />
+  </form>
+
+  <form id="uv-form">
+    <input id="uv-search-engine" type="hidden" />
+    <input id="uv-address" type="text" placeholder="Search the web freely" />
+  </form>
+</div>
+    <div class="desc left-margin">
+        <p id="sj-error"></p>
+        <pre id="sj-error-code"></pre>
+        <p id="uv-error"></p>
+        <pre id="uv-error-code"></pre>
+    </div>
+
+    <footer>
+        <div></div>
+        <div>
+            <span>Str1k3r Central&trade;</span>
+        </div>
+    </footer>
+
+    <iframe style="display: none;" id="uv-frame"></iframe>
+    <script src="/assets/main.js"></script>
+    <script src="/assets/js/subtitle.js"></script>
+
+</body>
+</html>
