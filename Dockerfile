@@ -4,7 +4,7 @@ ENV NODE_ENV=production
 ARG NPM_BUILD="npm install --omit=dev"
 EXPOSE 8080/tcp
 
-LABEL maintainer="Mercury Workshop"
+LABEL maintainer="Str1k3r"
 LABEL summary="Scramjet Demo Image"
 LABEL description="Example application of Scramjet"
 
